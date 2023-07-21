@@ -2,15 +2,26 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public Animator animator;
+    public GameObject player_object;
+    public GameObject weapon_object;
+    public GameObject shield_object;
     public CharacterController2D controller;
     public float runSpeed = 100f;
+
+    private Animator player_animator;
+    private Animator weapon_animator;
+    private Animator shield_animator;
 
     float horizontalMove = 0f;
     float verticalMove = 0f;
 
 
-    // Start is called before the first frame update
+    void Awake(){
+        player_animator = player_object.GetComponent<Animator>();
+        weapon_animator = weapon_object.GetComponent<Animator>();
+        shield_animator = shield_object.GetComponent<Animator>();
+    }
+
     void Start()
     {
         runSpeed = 100f;
@@ -22,17 +33,25 @@ public class PlayerMovement : MonoBehaviour
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         verticalMove = Input.GetAxisRaw("Vertical") * runSpeed;
         if (Mathf.Abs(horizontalMove) > 0f || Mathf.Abs(verticalMove) > 0f){
-            animator.SetBool("Moving", true);
+            player_animator.SetBool("Moving", true);
+            weapon_animator.SetBool("Moving", true);
+            shield_animator.SetBool("Moving", true);
         } else {
-            animator.SetBool("Moving", false);
+            player_animator.SetBool("Moving", false);
+            weapon_animator.SetBool("Moving", false);
+            shield_animator.SetBool("Moving", false);
         }
 
         if (Input.GetButtonDown("Attack"))
 		{
-			animator.SetBool("Attack", true);
+			player_animator.SetBool("Attack", true);
+			weapon_animator.SetBool("Attack", true);
+			shield_animator.SetBool("Attack", true);
 		}
         else {
-			animator.SetBool("Attack", false);
+			player_animator.SetBool("Attack", false);
+			weapon_animator.SetBool("Attack", false);
+			shield_animator.SetBool("Attack", false);
         }
     }
 
