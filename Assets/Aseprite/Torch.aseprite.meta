@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1fd700bf3e1d6f54c867f1ea940524b6
+guid: 3f481ee70afd75a4ea81c951603c4f4c
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638251274462144600
+  platformSettingsDirtyTick: 638256472687046468
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: tileset
+  - name: Torch
     originalName: 
-    pivot: {x: 0.5714286, y: -0.14285715}
+    pivot: {x: 0.5, y: -0.2857143}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 112
-      height: 112
-    spriteID: 3574f4533d49c4e41ae805f132d31cb6
+      width: 6
+      height: 7
+    spriteID: 9731ea9576ad5e64baa059fa73f7427d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -142,20 +142,20 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1600849442
-    name: tileset
+    guid: -2102477512
+    name: Torch
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: tileset
+    - name: Torch
       frameIndex: 0
       cellRect:
-        x: 0
-        y: 16
-        width: 112
-        height: 112
-      spriteId: 3574f4533d49c4e41ae805f132d31cb6
+        x: 5
+        y: 2
+        width: 6
+        height: 7
+      spriteId: 9731ea9576ad5e64baa059fa73f7427d
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -197,4 +197,4 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 128, y: 128}
+  canvasSize: {x: 16, y: 16}
