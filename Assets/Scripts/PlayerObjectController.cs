@@ -14,7 +14,7 @@ public class PlayerObjectController : NetworkBehaviour
 
     private AnimationScript animation_script;
     private ThirdPersonController thid_person_controller;
-    // private PlayerInput player_input;
+    private CharacterController2D player_input;
 
     private CustomNetworkManager manager;
 
@@ -37,8 +37,8 @@ public class PlayerObjectController : NetworkBehaviour
 
     public override void OnStartLocalPlayer()
     {
-        // player_input = GetComponent<PlayerInput>();
-        // player_input.enabled = true;
+        player_input = GetComponent<CharacterController2D>();
+        player_input.enabled = true;
     }
 
     public override void OnStartAuthority()

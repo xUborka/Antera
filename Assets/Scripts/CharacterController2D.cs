@@ -1,8 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using Mirror;
 
-public class CharacterController2D : MonoBehaviour
+
+public class CharacterController2D : NetworkBehaviour
 {
     [Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;
     private bool m_FacingRight = true;
@@ -27,6 +27,7 @@ public class CharacterController2D : MonoBehaviour
 
     public void Move(Vector2 target_velocity)
     {
+        if (!isOwned) { return; }
 
         // And then smoothing it out and applying it to the character
         m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, target_velocity, ref m_Velocity, m_MovementSmoothing);

@@ -1,6 +1,7 @@
 using UnityEngine;
+using Mirror;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : NetworkBehaviour
 {
     public GameObject player_object;
     public GameObject weapon_object;
@@ -30,6 +31,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!isOwned){ return; }
+
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         verticalMove = Input.GetAxisRaw("Vertical") * runSpeed;
         if (Mathf.Abs(horizontalMove) > 0f || Mathf.Abs(verticalMove) > 0f){

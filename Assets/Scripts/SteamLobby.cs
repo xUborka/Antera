@@ -45,6 +45,7 @@ public class SteamLobby : MonoBehaviour
     public void HostLobby(){
         Debug.Log("Host pressed");
         SteamMatchmaking.CreateLobby(ELobbyType.k_ELobbyTypePublic, manager.maxConnections);
+        Debug.Log("LobbyCreationRequested!");
     }
 
     private void OnLobbyCreated(LobbyCreated_t callback){
