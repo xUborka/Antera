@@ -12,7 +12,6 @@ public class LobbyController : MonoBehaviour
     public static LobbyController Instance;
 
     public TextMeshProUGUI LobbyNameText;
-    public TextMeshProUGUI LobbyIDText;
 
     public GameObject PlayerListViewContent;
     public GameObject PlayerListItemPrefab;

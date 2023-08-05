@@ -14,6 +14,8 @@ public class LobbiesListManager : MonoBehaviour
     public GameObject lobbiesButton;
     public GameObject hostButton;
 
+    public GameObject playMenu;
+
     public List<GameObject> listOfLobbies = new List<GameObject>();
 
     private void Awake()
@@ -53,22 +55,25 @@ public class LobbiesListManager : MonoBehaviour
         }
     }
 
+    public void DisplayPlayMenu(){
+        playMenu.SetActive(true);
+    }
+
+    public void ClosePlayMenu(){
+        playMenu.SetActive(false);
+    }
+
     public void GetListOfLobbies()
     {
         Debug.Log("GetListOfLobbies");
-        lobbiesButton.SetActive(false);
-        hostButton.SetActive(false);
         lobbiesMenu.SetActive(true);
-
+        playMenu.SetActive(false);
         SteamLobby.Instance.GetLobbiesList();
     }
 
     public void GoBackFromLobbies()
     {
         DestroyLobbies();
-
         lobbiesMenu.SetActive(false);
-        lobbiesButton.SetActive(true);
-        hostButton.SetActive(true);
     }
 }

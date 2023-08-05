@@ -20,12 +20,11 @@ public class PlayerListItem : MonoBehaviour
 
     public void ChangeReadyStatus()
     {
+        Debug.Log("Updating Status");
         if (Ready){
-            PlayerStatusText.text = "Ready";
-            PlayerStatusText.color = Color.green;
+            PlayerStatusText.color = Color.green; //new Color(55, 225, 55);
         } else {
-            PlayerStatusText.text = "Not Ready";
-            PlayerStatusText.color = Color.red;
+            PlayerStatusText.color = Color.red; // new Color(225, 55, 55);
         }
     }
 
@@ -39,6 +38,8 @@ public class PlayerListItem : MonoBehaviour
         int imageID = SteamFriends.GetLargeFriendAvatar((CSteamID)PlayerSteamID);
         if (imageID == -1) { return; }
         PlayerIcon.texture = GetSteamImageAsTexture(imageID);
+            // Flip image
+        PlayerIcon.uvRect = new Rect(0, 0, 1, -1);
     }
 
     public void SetPlayerValues()
