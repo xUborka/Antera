@@ -59,7 +59,7 @@ public class PlayerMovement : NetworkBehaviour
     }
 
     void FixedUpdate(){
-        Debug.Log(horizontalMove);
+        // Debug.Log(horizontalMove);
         Vector2 speed_vector = Vector2.ClampMagnitude(new Vector2(horizontalMove, verticalMove), runSpeed * Time.deltaTime);
         controller.Move(speed_vector);
     }

@@ -569,7 +569,7 @@ namespace Mirror
 
             OnStopServer();
 
-            //Debug.Log("NetworkManager StopServer");
+            Debug.Log("NetworkManager StopServer");
             NetworkServer.Shutdown();
 
             // set offline mode BEFORE changing scene so that FinishStartScene
@@ -608,6 +608,7 @@ namespace Mirror
             //       Transport.OnClientDisconnect
             //     NetworkClient.OnTransportDisconnect
             //   NetworkManager.OnClientDisconnect
+            Debug.Log("ClientDisconnect");
             NetworkClient.Disconnect();
 
             // UNET invoked OnDisconnected cleanup immediately.

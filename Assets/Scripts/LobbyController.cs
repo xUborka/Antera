@@ -30,11 +30,11 @@ public class LobbyController : MonoBehaviour
     {
         get
         {
-            if (manager != null)
+            if (manager == null)
             {
-                return manager;
+                manager = CustomNetworkManager.singleton as CustomNetworkManager;
             }
-            return manager = CustomNetworkManager.singleton as CustomNetworkManager;
+            return manager;
         }
     }
 
@@ -101,9 +101,8 @@ public class LobbyController : MonoBehaviour
     }
 
     public void LeaveLobby(){
-        Debug.Log("LeaveLobby pressed");
-        SteamMatchmaking.LeaveLobby(new CSteamID(CurrentLobbyID));
         Manager.StopHost();
+        SteamMatchmaking.LeaveLobby(new CSteamID(CurrentLobbyID));
     }
 
     public void UpdatePlayerList()

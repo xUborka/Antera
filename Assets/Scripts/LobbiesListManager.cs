@@ -34,7 +34,7 @@ public class LobbiesListManager : MonoBehaviour
 
     public void DisplayLobbies(List<CSteamID> lobbyIDs, LobbyDataUpdate_t result)
     {
-        Debug.Log("DisplayLobbies " + lobbyIDs.Count.ToString());
+        // Debug.Log("DisplayLobbies " + lobbyIDs.Count.ToString());
         DestroyLobbies();
         for (int i = 0; i < lobbyIDs.Count; i++)
         {
@@ -65,7 +65,7 @@ public class LobbiesListManager : MonoBehaviour
 
     public void GetListOfLobbies()
     {
-        Debug.Log("GetListOfLobbies");
+        // Debug.Log("GetListOfLobbies");
         lobbiesMenu.SetActive(true);
         playMenu.SetActive(false);
         SteamLobby.Instance.GetLobbiesList();

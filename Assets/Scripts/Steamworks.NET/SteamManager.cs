@@ -77,6 +77,7 @@ public class SteamManager : MonoBehaviour
             return;
         }
         s_instance = this;
+        Debug.Log("######################################");
 
         if (s_EverInitialized)
         {
