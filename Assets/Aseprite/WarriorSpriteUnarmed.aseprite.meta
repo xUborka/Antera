@@ -127,7 +127,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 89
+      y: 62
       width: 12
       height: 21
     spriteID: de2392cd08e72ee418c156df686d9e06
@@ -138,7 +138,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 89}
+    uvTransform: {x: 4, y: 62}
   - name: WarriorSpriteUnarmed_Frame_1
     originalName: 
     pivot: {x: 0.5, y: -0.04761905}
@@ -146,8 +146,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 26
-      y: 4
+      x: 4
+      y: 91
       width: 12
       height: 21
     spriteID: 5e4a8b67945acc34388db68b79493968
@@ -158,7 +158,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 26, y: 4}
+    uvTransform: {x: 4, y: 91}
   - name: WarriorSpriteUnarmed_Frame_2
     originalName: 
     pivot: {x: 0.5, y: -0.04761905}
@@ -166,8 +166,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 26
-      y: 33
+      x: 47
+      y: 4
       width: 12
       height: 21
     spriteID: ac090d462df4e534a9f6d3c0e45fe4d0
@@ -178,7 +178,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 26, y: 33}
+    uvTransform: {x: 47, y: 4}
   - name: WarriorSpriteUnarmed_Frame_3
     originalName: 
     pivot: {x: 0.5, y: -0.04761905}
@@ -186,8 +186,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 26
-      y: 62
+      x: 47
+      y: 33
       width: 12
       height: 21
     spriteID: 8b8658fffba8ba54d895969e76d2a046
@@ -198,7 +198,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 26, y: 62}
+    uvTransform: {x: 47, y: 33}
   - name: WarriorSpriteUnarmed_Frame_4
     originalName: 
     pivot: {x: 0.5, y: -0.04761905}
@@ -206,8 +206,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 26
-      y: 91
+      x: 47
+      y: 62
       width: 12
       height: 21
     spriteID: e494f6509e5689d4fa0eca4cae7201df
@@ -218,7 +218,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 26, y: 91}
+    uvTransform: {x: 47, y: 62}
   - name: WarriorSpriteUnarmed_Frame_5
     originalName: 
     pivot: {x: 0.5, y: -0.04761905}
@@ -226,8 +226,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 46
-      y: 4
+      x: 47
+      y: 91
       width: 12
       height: 21
     spriteID: 0ca4ab3406260f643b8280fb3f58e333
@@ -238,7 +238,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 46, y: 4}
+    uvTransform: {x: 47, y: 91}
   - name: WarriorSpriteUnarmed_Frame_6
     originalName: 
     pivot: {x: 0.5, y: -0.05}
@@ -246,7 +246,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 66
+      x: 87
       y: 33
       width: 12
       height: 20
@@ -258,7 +258,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 66, y: 33}
+    uvTransform: {x: 87, y: 33}
   - name: WarriorSpriteUnarmed_Frame_7
     originalName: 
     pivot: {x: 0.5, y: -0.05}
@@ -266,7 +266,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 66
+      x: 87
       y: 61
       width: 12
       height: 20
@@ -278,7 +278,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 66, y: 61}
+    uvTransform: {x: 87, y: 61}
   - name: WarriorSpriteUnarmed_Frame_8
     originalName: 
     pivot: {x: 0.5, y: -0.04761905}
@@ -286,8 +286,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 46
-      y: 33
+      x: 67
+      y: 4
       width: 12
       height: 21
     spriteID: 71b960a091e7fc440b0d41797a552b0d
@@ -298,7 +298,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 46, y: 33}
+    uvTransform: {x: 67, y: 4}
   - name: WarriorSpriteUnarmed_Frame_9
     originalName: 
     pivot: {x: 0.5, y: -0.05}
@@ -306,7 +306,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
+      x: 25
       y: 4
       width: 14
       height: 20
@@ -318,7 +318,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: 25, y: 4}
   - name: WarriorSpriteUnarmed_Frame_10
     originalName: 
     pivot: {x: 0.5, y: -0.04761905}
@@ -326,8 +326,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 46
-      y: 62
+      x: 67
+      y: 33
       width: 12
       height: 21
     spriteID: faf23762250a4da45b7eb1f8f90b8933
@@ -338,7 +338,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 46, y: 62}
+    uvTransform: {x: 67, y: 33}
   - name: WarriorSpriteUnarmed_Frame_11
     originalName: 
     pivot: {x: 0.5, y: -0.05}
@@ -346,7 +346,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 66
+      x: 87
       y: 89
       width: 12
       height: 20
@@ -358,7 +358,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 66, y: 89}
+    uvTransform: {x: 87, y: 89}
   - name: WarriorSpriteUnarmed_Frame_12
     originalName: 
     pivot: {x: 0.5, y: -0.04761905}
@@ -366,8 +366,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 46
-      y: 91
+      x: 67
+      y: 62
       width: 12
       height: 21
     spriteID: d09cbcc124ae9974185526f2767b793d
@@ -378,7 +378,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 46, y: 91}
+    uvTransform: {x: 67, y: 62}
   - name: WarriorSpriteUnarmed_Frame_13
     originalName: 
     pivot: {x: 0.5, y: -0.04761905}
@@ -386,8 +386,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 66
-      y: 4
+      x: 67
+      y: 91
       width: 12
       height: 21
     spriteID: 926213b78bfb2f142b489bcd72b701f7
@@ -398,7 +398,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 66, y: 4}
+    uvTransform: {x: 67, y: 91}
   - name: WarriorSpriteUnarmed_Frame_14
     originalName: 
     pivot: {x: 0.4615385, y: -0.04761905}
@@ -406,8 +406,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 32
+      x: 25
+      y: 60
       width: 13
       height: 21
     spriteID: 290f63943d967674c905e8a70fa45780
@@ -418,7 +418,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 32}
+    uvTransform: {x: 25, y: 60}
   - name: WarriorSpriteUnarmed_Frame_15
     originalName: 
     pivot: {x: 0.53846157, y: -0.05}
@@ -427,7 +427,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 61
+      y: 34
       width: 13
       height: 20
     spriteID: eb45a3df29258d9459883e29bcdd357c
@@ -438,7 +438,87 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 61}
+    uvTransform: {x: 4, y: 34}
+  - name: WarriorSpriteUnarmed_Frame_16
+    originalName: 
+    pivot: {x: 0.5, y: -0.04761905}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 4
+      width: 12
+      height: 21
+    spriteID: 41617d93ebfaf3c48afaf0c0c86ed51a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 4}
+  - name: WarriorSpriteUnarmed_Frame_17
+    originalName: 
+    pivot: {x: 0.5, y: -0.05}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 25
+      y: 32
+      width: 14
+      height: 20
+    spriteID: 410e6194b2b5b4746a280ac5d88b2e08
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 25, y: 32}
+  - name: WarriorSpriteUnarmed_Frame_18
+    originalName: 
+    pivot: {x: 0.4615385, y: -0.04761905}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 25
+      y: 89
+      width: 13
+      height: 21
+    spriteID: 8687c5ff5ca219b499950aab5b6525bc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 25, y: 89}
+  - name: WarriorSpriteUnarmed_Frame_19
+    originalName: 
+    pivot: {x: 0.53846157, y: -0.045454547}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 13
+      height: 22
+    spriteID: 9bd62a3fe6aa3694294fdd2fc2f0b884
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -576,6 +656,38 @@ ScriptedImporter:
         width: 13
         height: 20
       spriteId: eb45a3df29258d9459883e29bcdd357c
+    - name: WarriorSpriteUnarmed_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 10
+        y: 1
+        width: 12
+        height: 21
+      spriteId: 41617d93ebfaf3c48afaf0c0c86ed51a
+    - name: WarriorSpriteUnarmed_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 9
+        y: 1
+        width: 14
+        height: 20
+      spriteId: 410e6194b2b5b4746a280ac5d88b2e08
+    - name: WarriorSpriteUnarmed_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 10
+        y: 1
+        width: 13
+        height: 21
+      spriteId: 8687c5ff5ca219b499950aab5b6525bc
+    - name: WarriorSpriteUnarmed_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 9
+        y: 1
+        width: 13
+        height: 22
+      spriteId: 9bd62a3fe6aa3694294fdd2fc2f0b884
     linkedCells: []
     parentIndex: -1
   platformSettings:
