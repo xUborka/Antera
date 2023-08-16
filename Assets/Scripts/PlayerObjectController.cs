@@ -12,8 +12,6 @@ public class PlayerObjectController : NetworkBehaviour
     [SyncVar(hook = nameof(PlayerNameUpdate))] public string PlayerName;
     [SyncVar(hook = nameof(PlayerReadyUpdate))] public bool PlayerReady;
 
-    private AnimationScript animation_script;
-    private ThirdPersonController thid_person_controller;
     private CharacterController2D player_input;
 
     private CustomNetworkManager manager;
@@ -32,7 +30,7 @@ public class PlayerObjectController : NetworkBehaviour
 
     private void Start()
     {
-        DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(gameObject);
     }
 
     public override void OnStartLocalPlayer()
@@ -43,17 +41,14 @@ public class PlayerObjectController : NetworkBehaviour
 
     public override void OnStartAuthority()
     {
-        Debug.Log("OnStartAuthority");
         CmdSetPlayerName(SteamFriends.GetPersonaName().ToString());
         gameObject.name = "LocalGamePlayer";
         LobbyController.Instance.FindLocalPlayer(this.gameObject);
         LobbyController.Instance.UpdateLobbyName();
-        Debug.Log("//OnStartAuthority");
     }
 
     public override void OnStartClient()
     {
-        Debug.Log("OnStartClient");
         Manager.GamePlayers.Add(this);
         LobbyController.Instance.UpdateLobbyName();
         LobbyController.Instance.UpdatePlayerList();
@@ -61,7 +56,6 @@ public class PlayerObjectController : NetworkBehaviour
 
     public override void OnStopClient()
     {
-        Debug.Log("OnStopClient");
         Manager.GamePlayers.Remove(this);
         LobbyController.Instance.UpdatePlayerList();
     }
@@ -69,13 +63,13 @@ public class PlayerObjectController : NetworkBehaviour
     [Command]
     private void CmdSetPlayerName(string PlayerName)
     {
-        this.PlayerNameUpdate(this.PlayerName, PlayerName);
+        PlayerNameUpdate(this.PlayerName, PlayerName);
     }
 
     [Command]
     private void CMDSetPlayerReady()
     {
-        this.PlayerReadyUpdate(this.PlayerReady, !this.PlayerReady);
+        PlayerReadyUpdate(PlayerReady, !PlayerReady);
     }
 
     public void ChangeReady()
@@ -90,7 +84,7 @@ public class PlayerObjectController : NetworkBehaviour
     {
         if (isServer)
         {
-            this.PlayerName = NewValue;
+            PlayerName = NewValue;
         }
         if (isClient)
         {
@@ -102,7 +96,7 @@ public class PlayerObjectController : NetworkBehaviour
     {
         if (isServer)
         {
-            this.PlayerReady = NewValue;
+            PlayerReady = NewValue;
         }
         if (isClient)
         {

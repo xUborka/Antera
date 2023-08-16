@@ -1562,9 +1562,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 740015270}
-  - component: {fileID: 740015269}
-  - component: {fileID: 740015268}
   - component: {fileID: 740015267}
+  - component: {fileID: 740015268}
+  - component: {fileID: 740015271}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -1581,37 +1581,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 740015266}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56c01b12efd352e41801df58796dfeb9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lobbyIDs: []
-  CurrentLobbyID: 0
---- !u!114 &740015268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 740015266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6e55fca1f4e4844593a3dd65a3ecb39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Channels: 0200000001000000
-  Timeout: 25
-  AllowSteamRelay: 1
-  UseNextGenSteamNetworking: 1
---- !u!114 &740015269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 740015266}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22a838d7bde7bf84ea8d1c1b729adbfa, type: 3}
+  m_Script: {fileID: 11500000, guid: dee19c008496c554ebc93de3a848d5cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dontDestroyOnLoad: 1
@@ -1628,8 +1598,7 @@ MonoBehaviour:
   playerPrefab: {fileID: 1342759506574169354, guid: e6c44d15dbf33004a852f73139f71c46, type: 3}
   autoCreatePlayer: 1
   playerSpawnMethod: 0
-  spawnPrefabs:
-  - {fileID: 7450205737103073821, guid: 341a172d9e35a67469083f98c08c7f4c, type: 3}
+  spawnPrefabs: []
   snapshotSettings:
     bufferTimeMultiplier: 2
     catchupNegativeThreshold: -1
@@ -1642,6 +1611,22 @@ MonoBehaviour:
     deliveryTimeEmaDuration: 2
   timeInterpolationGui: 0
   GamePlayerPrefab: {fileID: 479715331547524779, guid: 341a172d9e35a67469083f98c08c7f4c, type: 3}
+--- !u!114 &740015268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740015266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6e55fca1f4e4844593a3dd65a3ecb39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Channels: 0200000001000000
+  Timeout: 25
+  AllowSteamRelay: 1
+  UseNextGenSteamNetworking: 1
 --- !u!4 &740015270
 Transform:
   m_ObjectHideFlags: 0
@@ -1657,6 +1642,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &740015271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740015266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5438cd236c7576d49b30ffd6a110040f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lobbyIDs: []
+  CurrentLobbyID: 0
 --- !u!1 &763605655
 GameObject:
   m_ObjectHideFlags: 0
@@ -4748,14 +4747,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2130275958}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fc668bc10b7b0347abc941ef5545b54, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fd5173317c57ec498834d198b2b2140, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lobbiesMenu: {fileID: 959771994}
-  lobbyDataItemPrefab: {fileID: 5071321125330191122, guid: 22add74c295ae8c4e8fe35df69980632, type: 3}
-  lobbyListContent: {fileID: 1573455781}
-  lobbiesButton: {fileID: 1120007100}
-  hostButton: {fileID: 2133162185}
+  lobbyDataItemPrefab: {fileID: 0}
+  lobbyListContent: {fileID: 5071321125330191122, guid: 22add74c295ae8c4e8fe35df69980632, type: 3}
+  lobbiesButton: {fileID: 2071488253}
+  hostButton: {fileID: 1828627303}
   playMenu: {fileID: 632841175}
   listOfLobbies: []
 --- !u!4 &2130275960
@@ -4857,7 +4856,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 740015267}
+      - m_Target: {fileID: 740015271}
         m_TargetAssemblyTypeName: SteamLobby, Assembly-CSharp
         m_MethodName: HostLobby
         m_Mode: 1
