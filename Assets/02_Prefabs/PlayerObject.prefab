@@ -245,7 +245,6 @@ MonoBehaviour:
   weapon_object: {fileID: 2569251066647102063}
   controller: {fileID: 1922328009527968020}
   runSpeed: 100
-  player_network_animator: {fileID: 1596425153037978289}
   weapon_network_animator: {fileID: 4089734913754368131}
 --- !u!114 &1922328009527968020
 MonoBehaviour:
@@ -316,6 +315,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3659260822490680103, guid: a540b0af77545e74ab4c014b042b0d79, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 2094258149444732662}
     - target: {fileID: 4739425895151296012, guid: a540b0af77545e74ab4c014b042b0d79, type: 3}
       propertyPath: m_FlipX
       value: 0

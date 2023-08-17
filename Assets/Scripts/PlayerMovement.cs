@@ -11,7 +11,7 @@ public class PlayerMovement : NetworkBehaviour
     private Animator player_animator;
     private Animator weapon_animator;
 
-    public NetworkAnimator player_network_animator;
+    // public NetworkAnimator player_network_animator;
     public NetworkAnimator weapon_network_animator;
 
     float horizontalMove = 0f;
@@ -44,9 +44,14 @@ public class PlayerMovement : NetworkBehaviour
 
         if (Input.GetButtonDown("Attack"))
 		{
-			player_network_animator.SetTrigger("Attack");
 			weapon_network_animator.SetTrigger("Attack");
 		}
+    }
+
+    public void Slash(){
+        foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Enemy")){
+            obj.GetComponent<GoblinScript>().Health -= 1;
+        }
     }
 
     public void FixedUpdate(){

@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class SlashEvent : MonoBehaviour
 {
-    // public ParticleSystem slash_particle;
+    public PlayerMovement playerMovement;
 
-    public void PrintEvent()
-    {
-        // slash_particle.Play();
+    public void Slash(){
+        playerMovement.Slash();
     }
 }
