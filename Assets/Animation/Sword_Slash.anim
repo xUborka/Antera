@@ -436,7 +436,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.23
-    functionName: PrintEvent
+    functionName: Slash
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

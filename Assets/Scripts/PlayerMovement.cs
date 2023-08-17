@@ -50,7 +50,7 @@ public class PlayerMovement : NetworkBehaviour
 
     public void Slash(){
         foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Enemy")){
-            obj.GetComponent<GoblinScript>().Health -= 1;
+            obj.GetComponent<GoblinScript>().Hurt();
         }
     }
 

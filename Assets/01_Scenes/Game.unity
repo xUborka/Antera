@@ -9066,7 +9066,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -2455702151920878745, guid: 45a37ce18c39eb14b98c29328883c787, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.8820755, b: 0.8820755, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9300,6 +9300,7 @@ MonoBehaviour:
   syncInterval: 0
   Health: 10
   boom: {fileID: 7658692520740575059, guid: d097587d1647b1b40b5b8b8c36595f2e, type: 3}
+  sr: {fileID: 1698772472}
 --- !u!1001 &1781292897
 PrefabInstance:
   m_ObjectHideFlags: 0
