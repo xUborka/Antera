@@ -245,6 +245,9 @@ MonoBehaviour:
   weapon_object: {fileID: 2569251066647102063}
   controller: {fileID: 1922328009527968020}
   runSpeed: 100
+  enemy_layer:
+    serializedVersion: 2
+    m_Bits: 512
   weapon_network_animator: {fileID: 4089734913754368131}
 --- !u!114 &1922328009527968020
 MonoBehaviour:
@@ -321,6 +324,10 @@ PrefabInstance:
       objectReference: {fileID: 2094258149444732662}
     - target: {fileID: 4739425895151296012, guid: a540b0af77545e74ab4c014b042b0d79, type: 3}
       propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5822199769551132525, guid: a540b0af77545e74ab4c014b042b0d79, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8266572741343967645, guid: a540b0af77545e74ab4c014b042b0d79, type: 3}

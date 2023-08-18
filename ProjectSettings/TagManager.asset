@@ -15,7 +15,7 @@ TagManager:
   - Player
   - Offhand
   - Weapon
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -47,4 +47,7 @@ TagManager:
     locked: 0
   - name: WallProps
     uniqueID: 1197144355
+    locked: 0
+  - name: WorldUI
+    uniqueID: 3325488331
     locked: 0

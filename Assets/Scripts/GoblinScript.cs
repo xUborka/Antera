@@ -1,6 +1,7 @@
 using Mirror;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GoblinScript : NetworkBehaviour
 {
@@ -8,6 +9,8 @@ public class GoblinScript : NetworkBehaviour
 
     public ParticleSystem boom;
     public SpriteRenderer sr;
+
+    public Image health_image;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +25,7 @@ public class GoblinScript : NetworkBehaviour
             Destroy(gameObject);
             Destroy(particle.gameObject, 1f);
         }
+        health_image.rectTransform.sizeDelta = new Vector2(Health*0.05f, 0.1f);
     }
 
     public void Hurt(){
